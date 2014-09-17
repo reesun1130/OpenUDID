@@ -1,3 +1,15 @@
+/**
+ * 
+ * OpenUDID 工作原理
+ * 
+ * 存储：第一次使用OPENUDID的APP创建UUID并MD5加密，存储在程序的粘贴板中
+ * 
+ * 读取：从同名的粘贴板(包括但不限于本程序)读取UUID
+ * 
+ * 缺憾：如果设备上删除了所有的使用OpenUDID的APP，那么这个UUID就会为空，则重新创建新的UUID，就不能保证设备的tracking
+ *
+ */
+
 ##IMPORTANT NOTE
 
 Please read this blog post before considering using OpenUDID:
